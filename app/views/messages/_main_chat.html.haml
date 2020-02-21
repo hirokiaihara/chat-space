@@ -1,1 +1,52 @@
-＜チャット画面＞
+.main-chat
+  .group-info
+    .left-box
+      %h2.current-group
+        Mr.Children
+      %ul.menber-list
+        Menber:
+        %li.menber
+          sakurai
+        %li.menber
+          tahara
+        %li.menber
+          nakagawa
+        %li.menber
+          suzuki
+    = link_to "#", class: "edit-btn" do
+      Edit
+
+  .message-list
+    .one-message
+      %ul.name-box
+        %li.user-name
+          sakurai
+        %li.date
+          2020/02/21(Fri) 20:00:00
+      .message
+        虹の彼方へ
+    .one-message
+      %ul.name-box
+        %li.user-name
+          sakurai
+        %li.date
+          2020/02/21(Fri) 20:30:00
+      .message
+        終わりなき旅
+    .one-message
+      %ul.name-box
+        %li.user-name
+          sakurai
+        %li.date
+          2020/02/21(Fri) 20:45:00
+      .message
+        彩り
+  .message__form
+    %form.new__message
+      .input__box
+        %input.input__text{:placeholder => "type a message", :type => "text"}/
+        %label{class: "input__box__image"}
+          %input{type: "file", class: "input__file"}
+          = icon('far', 'image fa-2x')
+
+      %input.submit__btn{:name => "commit", :type => "submit", :value => "Send"}/

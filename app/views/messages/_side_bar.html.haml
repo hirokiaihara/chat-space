@@ -1,1 +1,29 @@
-＜サイドバー＞
+.side-bar
+  .user-name
+    .top-items
+      %h3.top-items__name
+        ユーザーネーム
+      %ul.top-items__lists
+        %li.icon-left
+          = link_to "#" do
+            %span.far.fa-edit.left-btn
+        %li.icon-right
+          = link_to "#" do
+            %span.fa.fa-cog.right-btn
+        
+  .group-list
+    .one-group
+      .group-name
+        techcamp
+      .group-message
+        まだメッセージがありません
+    .one-group
+      .group-name
+        techcamp2
+      .group-message
+        まだメッセージがありません2
+    .one-group
+      .group-name
+        techcamp3
+      .group-message
+        まだメッセージがありません3
