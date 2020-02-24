@@ -2,13 +2,13 @@
   .user-name
     .top-items
       %h3.top-items__name
-        ユーザーネーム
+        = current_user.name
       %ul.top-items__lists
         %li.icon-left
           = link_to "#" do
             %span.far.fa-edit.left-btn
         %li.icon-right
-          = link_to "#" do
+          = link_to edit_user_path(current_user) do
             %span.fa.fa-cog.right-btn
         
   .group-list
