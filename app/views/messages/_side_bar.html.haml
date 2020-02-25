@@ -5,25 +5,18 @@
         = current_user.name
       %ul.top-items__lists
         %li.icon-left
-          = link_to "#" do
+          = link_to new_group_path do
             %span.far.fa-edit.left-btn
         %li.icon-right
           = link_to edit_user_path(current_user) do
             %span.fa.fa-cog.right-btn
         
   .group-list
-    .one-group
-      .group-name
-        techcamp
-      .group-message
-        まだメッセージがありません
-    .one-group
-      .group-name
-        techcamp2
-      .group-message
-        まだメッセージがありません2
-    .one-group
-      .group-name
-        techcamp3
-      .group-message
-        まだメッセージがありません3
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group-name
+            = group.name
+          .group-message
+            まだメッセージがありません
+    
