@@ -100,47 +100,43 @@
     }
     
   }
-  .message-list {
+  .messages {
     padding: 35px 0 0 40px;
     background-color: #fafafa;
     height: calc(100vh - 190px);
-    .one-message {
-      .name-box {
-        margin-bottom: 12px;
-        display: flex;
-        .user-name {
-          color: #333333;
-          font-size: 16px;
-        }
-        .date {
-          color: #999999;
-          font-size: 12px;
-          margin-left: 5px;
-        }
+    .upper-message {
+      margin-bottom: 12px;
+      display: flex;
+      .upper-message__user-name {
+        color: #333333;
+        font-size: 16px;
       }
-      .message {
-        color: #434A54;
-        font-size: 14px;
-        margin-bottom: 46px;
+      .upper-message__date {
+        color: #999999;
+        font-size: 12px;
+        margin-left: 5px;
       }
+    }
+    .lower-message {
+      color: #434A54;
+      font-size: 14px;
+      margin-bottom: 46px;
     }
   }
   .message__form {
     background-color: #d2d2d2;
     height: 90px;
     padding: 20px 40px;
-    .new__message {
+    .new_message {
       display: flex;
-      justify-content: space-between;
+      width: 100%;
       .input__box {
         position: relative;
-        display: flex;
-        justify-content: space-between;
         width: 100%;
         .input__text {
           height: 50px;
           width: 100%;
-          padding: 0 0 0 10px;
+          padding: 0 40px 0 10px;
           color: #999999;
           font-size: 16px;
           border-style: none;
@@ -150,19 +146,19 @@
           top: 10px;
           right: 10px;
           cursor: pointer;
-
-        }
-        .input__file {
-          display: none;
+          .input__file {
+            display: none;
+          }
         }
       }
       .submit__btn {
-        margin-left: 15px;
-        height: 50px;
         width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
         background-color: #38aef0;
         color: white;
-        font-size: 15px;
+        cursor: pointer;
       }
     }
   }
