@@ -64,4 +64,4 @@ $(function(){
       $(".submit__btn").removeAttr("disabled");
     })
   });
-});j部位lでr
+});
